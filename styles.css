@@ -38,7 +38,7 @@ body {
         /* border: 2px solid red; */
         background-color: var(--White);
         height: 70vh;
-        width: 37rem;
+        width: 28rem;
         display: flex;
 
     }
@@ -75,20 +75,20 @@ body {
 
     .texts {
         /* display: none; */
-        padding: 3rem;
+        padding: 1rem;
     }
 
     .texts h1 {
         font-family: Fraunces;
-        font-size: 30px;
-        margin-bottom: 1rem;
+        font-size: 20px;
+        margin-bottom: 0.3rem;
     }
 
     .texts p {
         line-height: 1.3rem;
         font-size: 14px;
         color: var(--grayishBlue);
-        margin-bottom: 1rem;
+        margin-bottom: 0.9rem;
         font-weight: 400;
         font-family: Fraunces;
 
@@ -97,7 +97,7 @@ body {
     .price {
         display: flex;
         gap: 1rem;
-        margin-bottom: 0.8rem;
+        margin-bottom: 1.5rem;
         align-items: center;
     }
 
