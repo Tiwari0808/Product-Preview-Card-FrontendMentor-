@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --DarkCyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --VeryDarkBlue: hsl(212, 21%, 14%);
+    --grayishBlue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%)
+}
+
+/* Family: [Montserrat] */
+/* - Family: [Fraunces]*/
+
+body {
+    font-size: 14px;
+}
+
+@media screen and (min-width:800px) {
+    body {
+        background-color: var(--Cream);
+    }
+    .main {
+        max-width: 100%;
+        display: flex;
+        padding: 1rem;
+        border-radius: 8px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container {
+        border-radius: 10px;
+        /* border: 2px solid red; */
+        background-color: var(--White);
+        height: 70vh;
+        width: 37rem;
+        display: flex;
+
+    }
+    /* .container img {
+        max-width: 100%;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+        cursor: pointer;
+        display: none;
+    } */
+    .mobileImg{
+        display: none;
+    }
+    .desktopImg{
+        display: block;
+        border-radius: 10px 0 0 10px;
+    }
+    .header {
+        /* display: none; */
+        text-transform: uppercase;
+        font-family:montserrat;
+        color: var(--grayishBlue);
+        letter-spacing: 5px;
+        font-weight: 500;
+        margin-bottom: 2vh;
+        font-size: 14px;
+    }
+    .header2 {
+        text-transform: uppercase;
+        font-family:montserrat;
+        color: var(--grayishBlue);
+        font-weight: 500;
+    }
+
+    .texts {
+        /* display: none; */
+        padding: 3rem;
+    }
+
+    .texts h1 {
+        font-family: Fraunces;
+        font-size: 30px;
+        margin-bottom: 1rem;
+    }
+
+    .texts p {
+        line-height: 1.3rem;
+        font-size: 14px;
+        color: var(--grayishBlue);
+        margin-bottom: 1rem;
+        font-weight: 400;
+        font-family: Fraunces;
+
+    }
+
+    .price {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 0.8rem;
+        align-items: center;
+    }
+
+    .color {
+        color: var(--DarkCyan);
+        font-family: Fraunces;
+        font-size: 1.7rem;
+
+    }
+
+    .normal {
+        text-decoration: line-through;
+        color: var(--grayishBlue);
+        font-family: montserrat;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .cart{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-self: center;
+    }
+
+    .cart button{
+       width: 100%; 
+       background-color: var(--DarkCyan);
+       border: none;
+       padding: 0.7rem;
+       border-radius: 8px;
+       display: flex;
+       gap: 1rem;
+       align-items: center;
+       justify-content: center;
+       color: var(--White);
+       font-weight:500;
+       cursor: pointer;
+    }
+
+}
+
+
+@media screen and (max-width:600px) {
+    body {
+        background-color: var(--Cream);
+    }
+
+    .main {
+        max-width: 90%;
+        /* display: none; */
+        padding: 1rem;
+        border-radius: 8px;
+        margin: auto;
+        /* height: 100vh; */
+    }
+
+    .container {
+        border-radius: 15px;
+        /* border: 2px solid red; */
+        background-color: var(--White);
+        /* height: 95vh; */
+
+    }
+
+    .container img {
+        max-width: 100%;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    .desktopImg{
+        display: none;
+    }
+
+    .header {
+        /* display: none; */
+        text-transform: uppercase;
+        font-family:montserrat;
+        color: var(--grayishBlue);
+        letter-spacing: 5px;
+        font-weight: 500;
+        margin-bottom: 2vh;
+        font-size: 14px;
+    }
+
+    .header2 {
+        text-transform: uppercase;
+        font-family:montserrat;
+        color: var(--grayishBlue);
+        font-weight: 500;
+    }
+
+    .texts {
+        /* display: none; */
+        padding: 1rem;
+    }
+
+    .texts h1 {
+        font-family: Fraunces;
+        font-size: 30px;
+        margin-bottom: 1rem;
+    }
+
+    .texts p {
+        line-height: 1.3rem;
+        font-size: 14px;
+        color: var(--grayishBlue);
+        margin-bottom: 1rem;
+        font-weight: 400;
+        font-family: Fraunces;
+
+    }
+
+    .price {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 0.8rem;
+        align-items: center;
+    }
+
+    .color {
+        color: var(--DarkCyan);
+        font-family: Fraunces;
+        font-size: 1.7rem;
+
+    }
+
+    .normal {
+        text-decoration: line-through;
+        color: var(--grayishBlue);
+        font-family: montserrat;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .cart{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-self: center;
+    }
+
+    .cart button{
+       width: 100%; 
+       background-color: var(--DarkCyan);
+       border: none;
+       padding: 0.7rem;
+       border-radius: 8px;
+       display: flex;
+       gap: 1rem;
+       align-items: center;
+       justify-content: center;
+       color: var(--White);
+       font-weight:500;
+       cursor: pointer;
+    }
+
+
+
+
+
+
+
+}
