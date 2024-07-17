@@ -37,34 +37,29 @@ body {
         border-radius: 10px;
         /* border: 2px solid red; */
         background-color: var(--White);
-        height: 70vh;
-        width: 28rem;
+        height: 50vhpx;
+        width: 30%;
         display: flex;
-
     }
-    /* .container img {
-        max-width: 100%;
-        border-radius: 15px 15px 0 0;
-        object-fit: cover;
-        cursor: pointer;
-        display: none;
-    } */
+
     .mobileImg{
         display: none;
     }
     .desktopImg{
         display: block;
         border-radius: 10px 0 0 10px;
+        width: 50%;
+        object-fit:fill;
     }
     .header {
         /* display: none; */
         text-transform: uppercase;
         font-family:montserrat;
         color: var(--grayishBlue);
-        letter-spacing: 5px;
+        letter-spacing: 2px;
         font-weight: 500;
-        margin-bottom: 2vh;
-        font-size: 14px;
+        margin-bottom: vh;
+        font-size: 10px;
     }
     .header2 {
         text-transform: uppercase;
@@ -75,17 +70,19 @@ body {
 
     .texts {
         /* display: none; */
-        padding: 1rem;
+        padding: 10px;
+        width:50%;
+        /* display: flex; */
     }
 
     .texts h1 {
         font-family: Fraunces;
-        font-size: 20px;
-        margin-bottom: 0.3rem;
+        font-size: 15px;
+        margin-bottom: 0.5rem;
     }
 
     .texts p {
-        line-height: 1.3rem;
+        line-height: 1rem;
         font-size: 14px;
         color: var(--grayishBlue);
         margin-bottom: 0.9rem;
@@ -96,15 +93,20 @@ body {
 
     .price {
         display: flex;
-        gap: 1rem;
+        /* gap: 1rem; */
         margin-bottom: 1.5rem;
         align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        /* width: 50%; */
     }
 
     .color {
         color: var(--DarkCyan);
         font-family: Fraunces;
-        font-size: 1.7rem;
+        font-size: 1rem;
+        display: flex;
 
     }
 
@@ -112,8 +114,9 @@ body {
         text-decoration: line-through;
         color: var(--grayishBlue);
         font-family: montserrat;
-        font-size: 13px;
+        font-size: 0.6rem;
         font-weight: 600;
+        display: flex;
     }
 
     .cart{
